@@ -24,17 +24,17 @@
 
 
 # Write a Python program to remove duplicate values from the dictionary 
-duplicate = {'a': 10, 'b': 15, 'c': 10, 'd': 15}
-new_dict = {}
-new_val =set()
+# duplicate = {'a': 10, 'b': 15, 'c': 10, 'd': 15}
+# new_dict = {}
+# new_val =set()
 
-for key, value in duplicate.items():
-    if value not in new_val:
-        new_dict[key] = value
-        new_val.add(value)
+# for key, value in duplicate.items():
+#     if value not in new_val:
+#         new_dict[key] = value
+#         new_val.add(value)
 
-print('old doubled values dic: ',duplicate)
-print('new single value dic: ',new_dict)
+# print('old doubled values dic: ',duplicate)
+# print('new single value dic: ',new_dict)
     
 
 
