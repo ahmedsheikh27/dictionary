@@ -18,15 +18,33 @@
 #     print("Please enter positive num")
 
 # Flatten the following nested dictionary into a single-level dictionary:
-nested_dict = {'a': {'b': 1, 'c': 2}, 'd': {'e': 3, 'f': 4}} 
+# nested_dict = {'a': {'b': 1, 'c': 2}, 'd': {'e': 3, 'f': 4}} 
 
-flattenDic = {}
+# flattenDic = {}
 
-for key, val in nested_dict.items():
-    for fkey, value in val.items():
-        flattenDic[f'{key}.{fkey}'] = value
+# for key, val in nested_dict.items():
+#     for fkey, value in val.items():
+#         flattenDic[f'{key}.{fkey}'] = value
 
 
 
-print(flattenDic)
+# print(flattenDic)
 
+# Write a Python program to split a dictionary into two based on whether the values are odd or even.
+
+# num = {'a': 10, 'b': 15, 'c': 8, 'd': 7, 'e': 3, 'f': 4}
+
+# even={}
+# odd={}
+
+# for key, value in num.items():
+#     if value % 2 == 0:
+#         even[key] = value
+#     else:
+#         odd[key] = value
+
+
+
+# print("Original Dictionary:", num)
+# print("Even Dictionary:", even)
+# print("Odd Dictionary:", odd)        
