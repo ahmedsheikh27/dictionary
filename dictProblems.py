@@ -18,14 +18,13 @@
 #     print("Please enter positive num")
 
 # Flatten the following nested dictionary into a single-level dictionary:
-# nested_dict = {'a': {'b': 1, 'c': 2}, 'd': {'e': 3, 'f': 4}} 
+# nested_dict = {'a': {'b': 1, 'c': 2}, 'd': {'e': 3, 'f': 4}}
 
 # flattenDic = {}
 
 # for key, val in nested_dict.items():
 #     for fkey, value in val.items():
 #         flattenDic[f'{key}.{fkey}'] = value
-
 
 
 # print(flattenDic)
@@ -44,7 +43,18 @@
 #         odd[key] = value
 
 
-
 # print("Original Dictionary:", num)
 # print("Even Dictionary:", even)
-# print("Odd Dictionary:", odd)        
+# print("Odd Dictionary:", odd)
+
+# Create a dictionary comprehension to filter out all keys in  where the value is less than 3.
+
+filter = {"a": 1, "b": 2, "c": 3, "d": 4, "e": 5, "f": 6}
+for key, value in filter.items():
+    if value < 3:
+        filter[key] = value
+        print(key)
+    elif value > 3:
+        print("Values greater than 3 in dic: ", "Key=", key, ", value:{", value, "}")
+    else:
+        print('Nothing to show')
