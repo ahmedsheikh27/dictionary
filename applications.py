@@ -35,6 +35,21 @@
 
 # print('old doubled values dic: ',duplicate)
 # print('new single value dic: ',new_dict)
-    
 
+#25 Write a Python function that accepts a dictionary and a key, and returns the value associated with the key. If the key doesn’t exist, return "Key not found".
+def keyValue(dictionary, key):
+    return dictionary.get(key, 'key not found')
+person = {
+    "Name": "John",
+    "Age": 30,
+    "Address": {
+        "Street": "123 Elm St",
+        "City": "Boston",
+        "Phone":"123-456-7890"
+    }
+}
 
+key = input('Enter a key: ')
+
+value = keyValue(person,key)
+print(value)
